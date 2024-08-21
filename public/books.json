@@ -1,0 +1,81 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "The Silent Patient",
+      "author": "Alex Michaelides",
+      "image": "https://i.ibb.co/FJjsH0y/abstract-colorful-design-book-cover.png",
+      "review": "A gripping psychological thriller that keeps you guessing until the very end. The twists and turns are brilliantly executed.",
+      "totalPages": 336,
+      "rating": 4.5,
+      "category": "Thriller",
+      "tags": ["Suspense", "Psychological"],
+      "publisher": "Celadon Books",
+      "yearOfPublishing": 2019
+    },
+    {
+      "bookId": 2,
+      "bookName": "Where the Crawdads Sing",
+      "author": "Delia Owens",
+      "image": "https://i.ibb.co/FJjsH0y/abstract-colorful-design-book-cover.png",
+      "review": "A beautifully written novel about love, survival, and the natural world. The characters are well-developed, and the setting is vividly described.",
+      "totalPages": 368,
+      "rating": 4.8,
+      "category": "Mystery",
+      "tags": ["Drama", "Nature"],
+      "publisher": "Putnam",
+      "yearOfPublishing": 2018
+    },
+    {
+      "bookId": 3,
+      "bookName": "The Midnight Library",
+      "author": "Matt Haig",
+      "image": "https://i.ibb.co/FJjsH0y/abstract-colorful-design-book-cover.png",
+      "review": "An imaginative and thought-provoking novel about the choices we make in life. The concept of the Midnight Library is both unique and captivating.",
+      "totalPages": 304,
+      "rating": 4.3,
+      "category": "Fantasy",
+      "tags": ["Existential", "Contemporary"],
+      "publisher": "Viking",
+      "yearOfPublishing": 2020
+    },
+    {
+      "bookId": 4,
+      "bookName": "Educated",
+      "author": "Tara Westover",
+      "image": "https://i.ibb.co/FJjsH0y/abstract-colorful-design-book-cover.png",
+      "review": "An inspiring memoir about the author's journey from an isolated upbringing to achieving a PhD. It's a powerful story of resilience and self-discovery.",
+      "totalPages": 334,
+      "rating": 4.7,
+      "category": "Memoir",
+      "tags": ["Inspirational", "Personal Development"],
+      "publisher": "Random House",
+      "yearOfPublishing": 2018
+    },
+    {
+      "bookId": 5,
+      "bookName": "The Alchemist",
+      "author": "Paulo Coelho",
+      "image": "https://i.ibb.co/FJjsH0y/abstract-colorful-design-book-cover.png",
+      "review": "A philosophical novel that explores the journey of finding one's own path in life. Its messages are profound and universally relatable.",
+      "totalPages": 208,
+      "rating": 4.6,
+      "category": "Fiction",
+      "tags": ["Philosophical", "Adventure"],
+      "publisher": "HarperOne",
+      "yearOfPublishing": 1988
+    },
+    {
+      "bookId": 6,
+      "bookName": "Dune",
+      "author": "Frank Herbert",
+      "image": "https://i.ibb.co/FJjsH0y/abstract-colorful-design-book-cover.png",
+      "review": "A classic science fiction novel with a richly detailed world and complex characters. It’s a must-read for fans of the genre.",
+      "totalPages": 412,
+      "rating": 4.9,
+      "category": "Science Fiction",
+      "tags": ["Epic", "Space Opera"],
+      "publisher": "Chilton Books",
+      "yearOfPublishing": 1965
+    }
+  ]
+  
