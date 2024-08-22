@@ -25,7 +25,7 @@ const Banner = () => {
           {/* Image Section */}
           <div className="flex w-full h-full items-center justify-end">
             <img
-              src="https://i.ibb.co/jMTWM3F/13209950-5151818.png" // Replace with your image URL or import the image locally
+              src="https://i.ibb.co/jMTWM3F/13209950-5151818.png"
               alt="Book Cover"
               className="max-w-full max-h-full object-cover shadow-lg"
             />

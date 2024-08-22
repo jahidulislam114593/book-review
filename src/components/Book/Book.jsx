@@ -1,21 +1,22 @@
 import React from "react";
 import { CiStar } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const Book = ({ book }) => {
-  const { bookId, bookName, author, image, rating, category, tags, publisher } =
-    book;
+  const { bookId, bookName, author, image, rating, category, tags } = book;
   return (
-    <div>
-      <div className="card border-2 shadow-xl">
-        {/* <figure className="px-10 pt-10 bg-gray-200">
-        </figure> */}
+    <Link to={`/bookdetails/${bookId}`} className="block">
+      <div className="card border-2 shadow-xl cursor-pointer">
         <div className="px-10 py-10 bg-gray-200  rounded-lg">
           <img src={image} alt="Shoes" className="rounded" />
         </div>
         <div className="card-body text-black">
           <div className="flex">
-            {tags.map((tag) => (
-              <span className="rounded-md px-2 bg-[#23BE0A] bg-opacity-5 text-[#23BE0A]  mr-2">
+            {tags.map((tag, idx) => (
+              <span
+                key={idx}
+                className="rounded-md px-2 bg-[#23BE0A] bg-opacity-5 text-[#23BE0A]  mr-2"
+              >
                 {tag}
               </span>
             ))}
@@ -36,7 +37,7 @@ const Book = ({ book }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
