@@ -2,7 +2,12 @@ import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { getSavedReadedBooks, saveReadBooks } from "../Utility/localStorage";
+import {
+  getSavedReadedBooks,
+  saveReadBooks,
+  saveWishListBooks,
+  getWishListBooks,
+} from "../Utility/localStorage";
 
 const BookDetails = () => {
   const bookInfo = useLoaderData();
@@ -27,14 +32,24 @@ const BookDetails = () => {
     const existsIdOnReaded = savedReadedBooks.find(
       (bookId) => bookId === intBookId
     );
+
+    const savedWishList = getWishListBooks();
+    const existsIdOnWishList = savedWishList.find(
+      (bookId) => bookId === intBookId
+    );
+
     if (existsIdOnReaded) {
       toast.error(
-        "You have Already Read this Books and cannot add it to Wishlist"
+        "You have already read this book and cannot add it to the wishlist."
       );
+    } else if (existsIdOnWishList) {
+      toast.error("This book is already in your wishlist.");
     } else {
-      toast("Books Added to WishList");
+      saveWishListBooks(intBookId);
+      toast.success("Book added to wishlist.");
     }
   };
+
   return (
     <div className="flex flex-col md:flex-row w-[1170px] h-[771px] bg-gray-100 p-6 rounded-lg shadow-lg">
       {/* Book Image */}

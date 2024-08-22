@@ -13,4 +13,25 @@ const saveReadBooks = (boodId) => {
     localStorage.setItem("readed-books", JSON.stringify(readedBooks));
   }
 };
-export { saveReadBooks, getSavedReadedBooks };
+
+const getWishListBooks = () => {
+  const wishListBook = localStorage.getItem("wishList-books");
+  if (wishListBook) {
+    return JSON.parse(wishListBook);
+  }
+  return [];
+};
+const saveWishListBooks = (boodId) => {
+  const wishListBookBooks = getWishListBooks();
+  const exists = wishListBookBooks.find((id) => id === boodId);
+  if (!exists) {
+    wishListBookBooks.push(boodId);
+    localStorage.setItem("wishList-books", JSON.stringify(wishListBookBooks));
+  }
+};
+export {
+  saveReadBooks,
+  getSavedReadedBooks,
+  saveWishListBooks,
+  getWishListBooks,
+};
